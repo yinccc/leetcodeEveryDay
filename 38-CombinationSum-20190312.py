@@ -20,4 +20,5 @@ class Solution(object):
 
 
 s=Solution()
-print(s.combinationSum([1,2,3,4],8))
+print(s.combinationSum([1,2,58,483,546,545,423321,545,323,6454],60))
+

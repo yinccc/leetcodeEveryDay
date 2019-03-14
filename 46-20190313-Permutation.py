@@ -8,13 +8,14 @@ def permute(nums):
 def dfs(nums, path, res):
     if not nums:
         res.append(path)
-        # return # backtracking
+        return
     for i in range(len(nums)):
         dfs(nums[:i] + nums[i + 1:], path + [nums[i]], res)
 
+nums=[1,2]
 
-res=permute([1,2,3])
-nums=[1,2,3]
-print(nums[1:])
+res=permute(nums)
+
+print(res)
 
 

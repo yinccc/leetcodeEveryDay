@@ -4,7 +4,7 @@ print(graph)
 visit = [0 for _ in range(numCourses)]
 print(visit)
 
-prerequisites=[[0,1],[1,0],[2,0],[3,2],[4,3],[4,2]]
+prerequisites=[[1,0],[2,0],[3,2],[4,3],[4,2]]
 for x, y in prerequisites:
     graph[x].append(y)
 print(graph)
@@ -33,7 +33,7 @@ class Solution:
         for i in range(numCourses):
             if not dfs(i):
                 return False
-            return True
+        return True
 
 S=Solution()
 print(S.canFinish(numCourses,prerequisites))

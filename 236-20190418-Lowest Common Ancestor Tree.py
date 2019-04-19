@@ -50,3 +50,5 @@ d.right=f
 
 S=Solution()
 print(S.lowestCommonAncestorTree(a,f,e).val)
+
+print("00"+str(30))
